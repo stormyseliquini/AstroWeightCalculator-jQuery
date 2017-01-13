@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Astro Weight Calculator-jquery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- create input elements
+******************
+********************
+-->
+    <h1 class="TitleOfPage">Astro Weight Calculator with jquery</h1>
+    <h2 class="howMuch">How much do you weigh on other planets? Find out now!</h2>
+    <div id="planetForm" class="form-group">
+        <label class="col-md-4 control-label" for="choosePlanet">Select a planet, star, or moon!</label>
+        <div class="col-md-4">
+            <select id="selectPlanet" name="selectPlanet" class="form-control">
+            </select>
+        </div>
+    </div>
+    <div>
+        <label for="text">Enter Weight</label>
+    </div>
+    <div>
+        <input type="text" id="inputWeight">
+    </div>
+    <!-- create button with on-click function in jquery
+ **************
+ ***************
+    -->
+    <button id="calc">calculate</button>
+    <p id="outPut"></p>
+    <!-- include script pages
+    **************
+    **************
+     -->
+    <script src="jquery-3.1.1.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
