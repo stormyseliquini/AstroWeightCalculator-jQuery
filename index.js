@@ -34,11 +34,11 @@ $(document).ready(function() {
         var enterWeight = $("#inputWeight").val();
 
         // reference the planet that is selected to its gravity
-        var psGravity = selectPlanet.options[selectPlanet.selectedIndex].value;
+        var gravity = $("#selectPlanet").val();
 
 
         // multiply the referenced planet gravity with the input weight push it to the html file with jquery method
-        var outPut = psGravity * enterWeight;
+        var outPut = gravity * enterWeight;
         var newOutPut = Math.round(outPut * 100) / 100;
         $("#outPut").text(newOutPut);
     }
